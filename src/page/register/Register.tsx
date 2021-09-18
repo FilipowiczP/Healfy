@@ -25,10 +25,12 @@ const Register = () => {
 
   const [validation, setValidation] = useState<Boolean | null>(null);
 
+  //    === CHANGE DATE ===
   const handleData = (newValue: Date | null) => {
     setFormValue({ ...formValue, birthday: newValue });
   };
 
+  //    === VALIDATION AND SEND NEW USER ===
   const handleSubmit = async (event: React.FormEvent) => {
     event.preventDefault();
     let check: boolean = true;

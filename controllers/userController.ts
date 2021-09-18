@@ -5,7 +5,7 @@ const models = require("../data/model/user");
 export const userController: Router = Router();
 
 //    === LOGIN FIND USER IN DATABASE ===
-userController.post("/login", async (req: Request, res: Response) => {
+userController.post("/users/login", async (req: Request, res: Response) => {
   const token = await jwt.sign({ user: req.body.login }, "xxx", {
     expiresIn: "1h",
   });

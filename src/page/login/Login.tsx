@@ -19,6 +19,7 @@ const Login = () => {
 
   const [validation, setValidation] = useState<Boolean>(false);
 
+  //    === VALIDATION AND LOGIN USER ===
   const handleSubmit = (event: React.FormEvent) => {
     let check: boolean = true;
 
@@ -27,7 +28,7 @@ const Login = () => {
       setValidation(true);
     }
     if (check === true) {
-      fetch("http://localhost:5000/login", {
+      fetch("http://localhost:5000//users/login", {
         method: "POST",
         mode: "cors",
         headers: {
