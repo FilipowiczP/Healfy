@@ -28,7 +28,7 @@ const Login = () => {
       setValidation(true);
     }
     if (check === true) {
-      fetch("http://localhost:5000//users/login", {
+      fetch("http://localhost:5000/users/login", {
         method: "POST",
         mode: "cors",
         headers: {
